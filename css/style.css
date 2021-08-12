@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1920px;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1170px;
+}
+
+.flex {
+	display: flex;
+}
+
+.header {
+	position: absolute;
+	z-index: 3;
+	top: 65px;
+	left: 55px;
+}
+
+.slider {
+	overflow: hidden;
+}
+
+.slider__aboutMe_title {
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+	right: 55px;
+	color:  white;
+	font-size: 36px;
+	font-family: poppins;
+	align-content: center;
+}
+
+.slider__aboutMe_title span {
+	position: absolute;
+	font-size: 72px;
+}
+
+.slider__aboutMe_introduction {
+	position: absolute;
+	z-index: 2;
+}
+
+.slider__aboutMe_socialIcons {
+	position: absolute;
+	z-index: 2;
+	top: 700px;
+	left: 1140px;
+}
+
+.slider__aboutMe_socialIcons li {
+	padding: 10px;
+}
+
+.slider__aboutMe_socialIcons ul {
+	max-height: 30px;
+	align-items: center;
+}
+
+.slider__aboutMe_extraText {
+	position: absolute;
+	z-index: 2;
+}
+
+.slider__aboutMe_slides {
+	position: relative;
+}
