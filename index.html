@@ -9,8 +9,240 @@
 	<title>საბოლოო პროექტი</title>
 </head>
 <body>
-
-
+	<header class="header">
+		<a href="index.html">
+			<img src="images/logo about.svg" alt="logo">
+		</a>
+	</header>
+	<!-- 1. სლაიდერი -->
+	<section class="slider">
+		<img id="slide">
+		<div class="slider__content">
+			<div class="slider__text">
+				<p>
+					<span>Hi, I'm </span>
+				</p>
+				<h1>Elene Khunashvili</h1>
+				<p>I'm web designer at company.com</p>
+			</div>
+			<div class="slider__socialIcons">
+				<ul class="flex">
+					<li>
+						<a href="https://www.facebook.com/">
+							<img src="images/facebook about.svg" alt="facebook">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com/">
+							<img src="images/twitter about.svg" alt="twitter">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.google.com/">
+							<img src="images/google+ about.svg" alt="google">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/">
+							<img src="images/youtube about.svg" alt="youtube">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.rss.com/">
+							<img src="images/rss about.svg" alt="rss">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slider__progressBar">
+			<p>
+				<span class="pink">100%</span> 
+				Satisfied Clients
+				<span id="bar"><span id="barProgress"></span></span>
+			</p>
+		</div> 
+	</section>
+	<!-- 2. ჩემს შესახებ -->
+	<section class="profile">
+		<div class="container flex">
+			<div class="profile__text">
+				<h2>Elene Khunashvili</h2>
+				<span>WEB DESIGNER</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute!
+				</p>
+				<div class="profile__btn">
+					<a href="#">Hire Me</a>
+				</div>
+			</div>
+			<div class="profile__photo">
+				<img src="images/profilepicture.jpg" alt="profile pic">
+			</div>
+			<div class="profile__skills">
+				<div class="profile__skills_list">
+					<ul>
+						<li>
+							<h4>Design <span class="pink">(80%)</span></h4>
+							<span class="bar"><span class="design show-on-scroll"></span></span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h4>Photography <span class="pink">(75%)</span></h4>
+							<span class="bar"><span class="photography show-on-scroll"></span></span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h4>Marking <span class="pink">(40%)</span></h4>
+							<span class="bar"><span class="marking show-on-scroll"></span></span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h4>Photoshop <span  class="pink">(65%)</span></h4>
+							<span class="bar"><span class="photoshop show-on-scroll"></span></span>
+						</li>
+					</ul>
+				</div>
+				<div class="profile__socialIcons">
+					<ul class="flex">
+						<li class="flex">
+							<a href="https://www.facebook.com/">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="https://www.twitter.com/">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="https://www.google.com/">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="https://www.pinterest.com/">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div class="profile__contactInfo_block flex container">
+			<div class="profile__contactInfo_phone flex container">
+				<div class="profile__contactInfo_imgBorder">
+					<img src="images/phone.svg" alt="phone">
+				</div>
+				<div class="profile__contactInfo_text">
+					<h4>Phone Number</h4>
+					<p><a href="tel:+995555188005">+995 555 188 005</a></p>
+				</div>
+			</div>
+			<div class="profile__contactInfo_addres flex container">
+				<div class="profile__contactInfo_imgBorder">
+					<img src="images/location.svg" alt="location">
+				</div>
+				<div class="profile__contactInfo_text">
+					<h4>User Address</h4>
+					<p>Tbilisi, Georgia</p>
+				</div>
+			</div>
+			<div class="profile__contactInfo_email flex container">
+				<div class="profile__contactInfo_imgBorder">
+					<img src="images/mail.svg" alt="mail">
+				</div>
+				<div class="profile__contactInfo_text">
+					<h4>Email Address</h4>
+					<p><a href="mailto:khunashvilielene@gmail.com">khunashvilielene@gmail.com</a></p>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- 3. სერვისები -->
+	<section class="services flex">
+		<div class="services__blocks flex wrap">
+			<div class="services__block_1 services__block_all services__block_overlay flex container">
+				<img src="images/graphichs design.svg" alt="block1" class="hidden-on-hover">
+				<h3>Graphich Design</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_2 services__block_all services__block_overlay flex container">
+				<img src="images/best service.svg" alt="block2" class="hidden-on-hover">
+				<h3>Best Service</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_3 services__block_all services__block_overlay flex container">
+				<img src="images/best service.svg" alt="block3" class="hidden-on-hover">
+				<h3>Fully Customized</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_4 services__block_all services__block_overlay flex container">
+				<img src="images/pixel perfect.svg" alt="block4" class="hidden-on-hover">
+				<h3>Pixel Perfect</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_5 services__block_all services__block_overlay flex container">
+				<img src="images/unique ideas.svg" alt="block5" class="hidden-on-hover">
+				<h3>Unique Ideas</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. psa dolor
+				</p>
+			</div>
+			<div class="services__block_6 services__block_all services__block_overlay flex container">
+				<img src="images/design analysis.svg" alt="block6" class="hidden-on-hover">
+				<h3>Design Analysis</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_7 services__block_all services__block_overlay flex container">
+				<img src="images/fully managed.svg" alt="block7" class="hidden-on-hover">
+				<h3>Fully Managed</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+			<div class="services__block_8 services__block_all services__block_overlay flex container">
+				<img src="images/helpful support.svg" alt="block8" class="hidden-on-hover">
+				<h3>Helpful Support</h3>
+				<p class="services__block_description">
+					Lorem ipm dolor amet, consecte
+					adipiing lit Sunt sed ad possimus
+					magm maiores. Ipsa dolor
+				</p>
+			</div>
+		</div>
+	</section>
+	<script src="https://kit.fontawesome.com/bd8263cb78.js" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>

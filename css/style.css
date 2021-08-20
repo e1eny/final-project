@@ -1,0 +1,413 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+.pink {
+	color: #E93656;
+}
+
+.flex {
+	display: flex;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.header {
+	position: absolute;
+	z-index: 100;
+}
+
+.header img {
+	padding: 60px 50px;
+}
+
+/* 1. სლაიდერი:
+ეს არის ფოტო და მოკლე ინფო თქვენ შესახებ. აქ თქვენს სახელს, გვარს, პროფესიას და ჩასვამთ თქვენს ფოტოს.
+JavaScript ზე უნდა დაწეროთ სლაიდერი ისე, რომ იცვლებოდეს მხოლოდ ფოტოები ყოველ 5 წამში ავტომატურად. გამოიყენეთ 3 ან მეტი ფოტო.
+*/
+
+.slider {
+	max-width: 1920px;
+	max-height: 960px;
+	overflow: hidden;
+}
+
+.slider__content {
+	position: absolute;
+	top: 35%;
+	left: 55%;
+}
+
+.slider__text span {
+	font-size: 50px;
+	font-family: 'GlacialIndifference-Regular';
+}
+
+.slider__text h1 {
+	font-size: 71px;
+	font-family: 'GlacialIndifference-Bold';
+}
+
+.slider__text p {
+	font-size: 23px;
+	font-family: 'GlacialIndifference-Regular';
+}
+
+.slider__text p, h1 {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.slider__socialIcons li {
+	max-width: 30px;
+	margin: 10px;
+}
+
+.slider__socialIcons ul {
+	align-items: center;
+}
+
+.slider__progressBar {
+	width: 340px;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#bar {
+	background: #F0F0F0;
+	margin-top: 20px;
+	display: block;
+	height: 6px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+#bar span {
+	height: 6px;
+	float: left;
+	background: #E93656;
+}
+
+#barProgress {
+	width: 100%;
+	animation: barProgress 3.5s;
+}
+
+@keyframes barProgress {
+	0%{
+		width: 0%;
+	}
+	100%{	/*დავტოვე ცარიელი, რომ არ ციმციმებდეს ეკრანი ანიმაციის ჩატვირთვისას*/		
+
+	}
+}
+
+/*2. მეტი ინფორმაცია თქვენზე
+ეს სექციაც შეიცავს ინფორმაციას თქვენზე, სახელი, გვარი, მოკლე დახასიათება / ბიოგრაფია, ფოტო, ძირითადი პროფესიული ცოდნა, სოც. ქსელის ლინკები და ქვემოთ ტელეფონი, მისამართი და ელ. ფოსტა.
+მაუსის მიტანაზე სადაც ხატია შეცვლილი ფერი ყველგან გამოიყენეთ transition -ები.
+პროცენტები თავიდან არ უნდა იყოს შევსებული და როცა დასქროლავს მაგ სექციაზე მაშინ უნდა შეივსოს.
+*/
+
+.container {
+	justify-content: center;
+	align-items: center;
+}
+
+.profile {
+	padding-top: 150px;
+}
+
+.profile__text {
+	max-width: 350px;
+	text-align: justify;
+	text-align-last: right;
+	margin: 50px 0;
+	line-height: 1.5em;
+}
+
+.profile__text h2 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 40px;
+	margin: 10px 0;
+}
+
+.profile__text span {
+	font-family: 'GlacialIndifference-Regular';
+	font-size: 15px;
+	color: #DAAE19; /*Yellow*/
+}
+
+.profile__text p {
+	font-family: 'Muli';
+	font-size: 16px;
+	color: #555555; /*light grey*/
+	margin: 35px 0;
+}
+
+.profile__btn {
+	margin: 75px 0;
+}
+
+.profile__btn a {
+	padding: 15px 50px;
+	background-color: #E93656;
+	color: white;
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 15px;
+}
+
+.profile__btn a:hover {
+	background-color: #15263E;
+	transition: 0.5s;
+}
+
+.profile__photo {
+	max-width: 430px;
+	margin: auto 65px;
+}
+
+.profile__skills {
+	width: 300px;
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 20px;
+}
+
+.profile__skills_list {
+	margin-bottom: 75px;
+}
+
+.bar {
+	background: #F0F0F0;
+	display: block;
+	height: 8px;
+	overflow: hidden;
+	margin: 25px auto;
+}
+
+.bar span {
+	height: 8px;
+	float: left;
+	background: #E93656;
+}
+
+.design.is-visible {
+	width: 80%;
+	animation: barProgress 3.5s;
+}
+
+.photography.is-visible {
+	width: 75%;
+	animation: barProgress 3.5s;
+}
+
+.marking.is-visible {
+	width: 40%;
+	animation: barProgress 3.5s;
+}
+
+.photoshop.is-visible {
+	width: 65%;
+	animation: barProgress 3.5s;
+}
+
+@keyframes design {
+	0%{
+		width: 0%;
+	}
+	100%{	
+		width: 80%;
+	}
+}
+
+@keyframes photography {
+	0%{
+		width: 0%;
+	}
+	100%{	
+		width: 75%;
+	}
+}
+
+@keyframes marking {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 40%;
+	}
+}
+
+@keyframes photoshop {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 65%;
+	}
+}
+
+.profile__socialIcons li {
+	background-color: #f0f0f0;
+	align-items: center;
+	justify-content: center;
+	margin: 2px;
+	width: 50px;
+	height: 50px;
+}
+
+.profile__socialIcons li:hover {
+	background-color: #15263E;
+	transition: 0.5s;
+}
+
+.profile__socialIcons a {
+	color: #6B6B6B;
+}
+
+.profile__socialIcons a:hover {
+	color: white;
+	transition: 0.5s;
+}
+
+/**/
+
+.profile__contactInfo_block {
+	height: 210px;
+	background-color: #131A36; /*navy blue*/
+	color: white;
+	margin: 100px 0;
+}
+
+.profile__contactInfo_block img {
+	width: 30px;
+	height: 30px;
+}
+
+.profile__contactInfo_imgBorder {
+	box-sizing: content-box;
+	border: 2px dashed white;
+	border-radius: 50%;
+	padding: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.profile__contactInfo_imgBorder:hover {
+	border: 2px solid #E93656;
+	background-color: #E93656;
+	transition: 0.5s;
+}
+
+.profile__contactInfo_block div {
+	margin: 15px;
+}
+
+.profile__contactInfo_block h4 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 25px;
+	padding-bottom: 1em;
+}
+
+.profile__contactInfo_block a {
+	color: inherit;
+	font-family: 'Muli';
+	font-size: 14px;
+}
+
+/*3. სერვისები
+ამ სექციაში იწერება თუ რას სთავაზობთ დამქირავებელს. მაგალითად ვებ გვერდის აწყობა, ინფორმაციის განთავსება, support და ა.შ.
+შეგიძლიათ შეავსოთ სატესტო მონაცემებით. მაუსის მიტანის დროს უნდა გამოჩნდეს მოკლე აღწერა.
+*/
+
+.services {
+	justify-content: center;
+}
+
+.services__blocks {
+	max-width: 1180px;
+	margin: 100px 0;
+}
+
+.services__block_all {
+	margin: 5px;
+	height: 360px;
+	width: 285px;
+	flex-direction: column;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.services__block_all img {
+	max-height: 60px;
+}
+
+.services__block_all h3 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 22px;
+	margin: 20px;
+}
+
+.services__block_description {
+	font-family: 'Muli';
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	visibility: hidden;
+}
+
+.services__block_all:hover .hidden-on-hover {
+	display: none;
+}
+
+.services__block_all:hover h3 {
+	color: white;
+}
+
+.services__block_all:hover {
+	background-color: #131A36;
+}
+
+.services__block_all:hover .services__block_description {
+	visibility: visible;
+}
+
+/*4. რეკომენდაციები
+ეს არის სხვადასხვა ადამიანების მიერ მიღებული რეკომენდაციები. ძირითადად ასეთ განყოფილებაში ანთავსებენ მომხმარებლის მიერ დატოვებულ შეფასებებს ან მადლობის წერილებს. 
+შეგიძლიათ ჩაწეროთ რეკომენდაციები ან სატესტო ტექსტი.
+JavaScript ზე უნდა დაწეროთ სლაიდერი ისე, რომ სულ იყოს სამი სლაიდი და მარჯვნივ რომ არის სამი პატარა ოთხკუთხედი ღილაკი მაგაზე დაჭერისას მოხდეს შესაბამის სლაიდზე გადართვა.
+სლაიდის გადართვისას უნდა შეიცვალოს ტექსტი, ფოტო, სახელი და პროფესია.
+*/
+
+
+
+/*5. ბოლო პროექტები:
+ამ სექციაში მოქცეულია შესრულებული პროექტები. შეავსეთ სატესტო ინფორმაციით. მაუსის მიტანის დროს უნდა გამოჩნდეს პროექტის სათაური როგორც ფოტოზეა ნაჩვენები. მარცხნივ მოცემულია კატეგორიები.
+JavaScript ზე დაწერეთ კოდი ისე, რომ კატეგორიაზე დაკლიკვით ხდებოდეს პროექტების გაფილტვრა. მაგალითად ჩავთვალოთ, რომ ყოველი კატეგორიიდან არის 1 პროექტი. თავიდან არჩეული იყოს ყველა, ხოლო კატეგორიაზე დაკლიკვისას დაიმალოს სხვა პროექტები და გამოჩნდეს მხოლოდ შესაბამისი კატეგორიის პროექტი.
+*/
+
+/*6. ბოლო სტატიები:
+აქ მოცემულია სტატიები. შეგიძლიათ შეავსოთ სატესტო ტექსტით. 
+*/
+
+/*7. Rosa Team:
+აქ შეგიძლიათ განათავსოთ პარტნიორის ლოგოები. ფოტოზე მაუსის მიტანისას ლოგო უნდა იცვლებოდეს ტექსტით როგორც ფოტოზეა ნაჩვენები.
+*/
+
+/*8. კონტაქტი
+ფონზე რომ რუკაა ეგ ჩასვით როგორც ფოტო, არ არის საჭირო ნამდვილი რუკის ჩასმა. ფორმა უნდა იგზავნებოდეს შემდეგ მისამართზე:
+https://ucha.ge/contact-form/submit.php
+მოთხოვნა უნდა გაიგზავნოს POST მეთოდით შემდეგი პარამეტრებით:
+name=...&email=...&website=...&message=...
+*/
