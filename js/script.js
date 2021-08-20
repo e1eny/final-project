@@ -1,3 +1,4 @@
+//slider 1 section
 let slides = ['images/image1.jpg', 'images/image2.jpg', 'images/image3.jpg'];
 
 let currentSlide = 0;
@@ -18,7 +19,7 @@ function slider() {
 
 window.onload = slider();
 
-
+//profile section skills animation on scroll
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
@@ -59,3 +60,21 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+
+// $('.slider span.next').click(function() {
+//   $current = $(this).siblings('img.active');
+//   $next = $current.next('img');
+//   if ($next.length != 0) {
+//     $current.removeClass('active');
+//     $next.addClass('active');
+//   }
+// })
+// $('.slider span.prev').click(function() {
+//   $current = $(this).siblings('img.active');
+//   $prev = $current.prev('img');
+//   if ($prev.length != 0) {
+//     $current.removeClass('active');
+//     $prev.addClass('active');
+//   }
+// })

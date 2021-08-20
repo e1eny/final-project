@@ -26,7 +26,8 @@ img {
 }
 
 .header img {
-	padding: 60px 50px;
+	max-width: 120px;
+	margin: 60px 50px;
 }
 
 /* 1. სლაიდერი:
@@ -36,7 +37,7 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .slider {
 	max-width: 1920px;
-	max-height: 960px;
+	max-height: 1080px;
 	overflow: hidden;
 }
 
@@ -390,7 +391,82 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 სლაიდის გადართვისას უნდა შეიცვალოს ტექსტი, ფოტო, სახელი და პროფესია.
 */
 
+.recommendations {
+	height: 570px;
+	/*background-color: navy;*/
+	background-image: url("../images/recommendations_banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+}
 
+.recommendations__img {
+	max-width: 140px;
+	border: 2px dashed white;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 45px;
+}
+
+.recommendations__info {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.recommendations__info img {
+	max-height: 26px;
+	margin: 15px 0;
+}
+
+.recommendations__text {
+	font-family: 'Roboto';
+	font-size: 15px;
+	max-width: 500px;
+	text-align: right;
+	line-height: 1.5em;
+	color: white;
+}
+
+.recommendations__info h5 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 28px;
+	color: white;
+	margin: 15px 0;
+}
+
+.recommendations__info span {
+	color: #E93656;
+	font-family: 'Roboto';
+	font-size: 13px;
+}
+
+.recommendations__slides input {
+	display: none;
+}
+
+.recommendations__navigation {
+	width: 5px;
+	margin-left: 140px;
+	flex-direction: column;
+}
+
+.recommendations__navigation_btn {
+	border: 2px solid white;
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.recommendations__navigation_btn:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.recommendations__navigation_btn:hover {
+	border-color: #E93656;
+}
+
+/*......*/
 
 /*5. ბოლო პროექტები:
 ამ სექციაში მოქცეულია შესრულებული პროექტები. შეავსეთ სატესტო ინფორმაციით. მაუსის მიტანის დროს უნდა გამოჩნდეს პროექტის სათაური როგორც ფოტოზეა ნაჩვენები. მარცხნივ მოცემულია კატეგორიები.
@@ -411,3 +487,391 @@ https://ucha.ge/contact-form/submit.php
 მოთხოვნა უნდა გაიგზავნოს POST მეთოდით შემდეგი პარამეტრებით:
 name=...&email=...&website=...&message=...
 */
+
+
+/*-- footer --*/
+
+.footer {
+	background-color: #282828;
+	flex-direction: column;
+}
+
+.footer__info {
+	flex-direction: column;
+	height: 428px;
+	width: 100%;
+}
+
+.footer__info_text {
+	color: #A5A5A5;
+	font-family: Roboto;
+	font-size: 17px;
+	line-height: 1.5em;
+	text-align: center;
+	max-width: 620px;
+	margin: 20px;
+}
+
+.footer__socialIcons i {
+	color: #00BEC5;
+	max-height: 20px;
+	margin: 20px 10px;
+}
+
+.footer__socialIcons i:hover {
+	color: #FAFAFA;
+	transition: 0.5s;
+}
+
+.footer__info_logo {
+	max-width: 160px;
+	margin: 10px;
+}
+
+.footer__rights {
+	font-family: 'Muli';
+	font-size: 15px;
+	color: white;
+	background-color: #171717;
+	height: 82px;
+	width: 100%;
+}
+
+
+
+
+
+/* ------------------- for screens 1600px wide and less -------------------*/
+
+@media screen and (max-width: 1600px) {
+
+	.header img {
+		max-width: 110px;
+		margin: 40px 50px;
+	}
+
+	.slider {
+		max-width: 1600px;
+		max-height: 900px;
+	}
+
+	.slider__progressBar {
+		width: 340px;
+		bottom: 7%;
+	}
+
+/* ------------------- for screens 1366px wide and less -------------------*/
+
+@media screen and (max-width: 1366px) {
+
+	.header img {
+		max-width: 100px;
+		margin: 40px 50px;
+	}
+
+	.slider {
+		max-width: 1366px;
+		max-height: 768px;
+	}
+
+	.slider__text span {
+		font-size: 42px;
+	}
+
+	.slider__text h1 {
+		font-size: 56px;
+	}
+
+	.slider__text p {
+		font-size: 20px;
+	}
+
+	.slider__socialIcons li {
+		max-width: 26px;
+		margin: 9px;
+	}
+
+	.slider__progressBar {
+		width: 320px;
+		font-size: 20px;
+	}
+
+	.profile__text {
+		max-width: 330px;
+	}
+
+	.profile__text h2 {
+		font-size: 36px;
+	}
+
+	.profile__text p {
+		font-size: 14px;
+	}
+
+	.profile__btn a {
+		padding: 14px 46px;
+		font-size: 14px;
+	}
+
+	.profile__photo {
+		max-width: 410px;
+		margin: auto 60px;
+	}
+
+	.profile__skills {
+		width: 280px;
+		font-size: 18px;
+	}
+
+	.footer__info_text {
+		font-size: 14px;
+	}
+
+	.footer__rights {
+		font-size: 12px;
+	}
+}
+
+/* ------------------- for screens 1280px wide and less -------------------*/
+
+@media screen and (max-width: 1280px) {
+
+	.slider {
+		max-width: 1280px;
+		max-height: 720px;
+	}
+
+	.slider__progressBar {
+		bottom: 10%;
+	}
+
+	.profile__contactInfo_block img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.profile__contactInfo_imgBorder {
+		box-sizing: content-box;
+		padding: 25px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.profile__contactInfo_block h4 {
+		font-size: 22px;
+		padding-bottom: 0.5em;
+	}
+
+	.services__blocks {
+		max-width: 1024px;
+		margin: 84px 0;
+	}
+	.services__block_all {
+		margin: 4px;
+		height: 340px;
+		width: 248px;
+		padding: 16px;
+	}
+	.services__block_all img {
+		max-height: 54px;
+	}
+	.services__block_all h3 {
+		font-size: 20px;
+		margin: 16px;
+	}
+	.services__block_description {
+		font-size: 12px;
+	}
+
+	.recommendations {
+		height: 400px;
+	}
+
+	.footer__info_logo {
+		max-width: 140px;
+	}
+}
+
+/* ------------------- for screens 1024px wide and less -------------------*/
+
+@media screen and (max-width: 1024px) {
+
+	.slider {
+		max-width: 1024px;
+	}
+
+	.slider__text span {
+		font-size: 36px;
+	}
+
+	.slider__text h1 {
+		font-size: 50px;
+	}
+
+	.slider__text p {
+		font-size: 16px;
+	}
+
+	.slider__socialIcons li {
+		max-width: 22px;
+		margin: 7px;
+	}
+
+	.slider__progressBar {
+		width: 280px;
+		font-size: 16px;
+		bottom: 22%;
+	}
+
+	.recommendations {
+		height: 368px;
+	}
+
+}
+
+/* ------------------- for screens 768px wide and less -------------------*/
+
+@media screen and (max-width: 768px) {
+
+	.header img {
+		max-width: 85px;
+		margin: 30px 30px;
+	}
+
+	.slider {
+		max-width: 768px;
+	}
+
+	.slider__content {
+		top: 10%;
+		left: 60%;
+	}
+
+	.slider__text span {
+		font-size: 36px;
+	}
+
+	.slider__text h1 {
+		font-size: 46px;
+	}
+
+	.slider__text p {
+		font-size: 16px;
+	}
+
+	.slider__socialIcons li {
+		max-width: 20px;
+	}
+
+	#bar {
+		margin-top: 12px;
+	}
+
+	.slider__progressBar {
+		width: 200px;
+		top: 40%;
+		right: 13%;
+	}
+
+	.hide-item {
+		display: none;
+	}
+
+}
+
+/* ------------------- for screens 576px wide and less -------------------*/
+
+@media screen and (max-width: 576px) {
+
+	.header img {
+		max-width: 76px;
+		margin: 26px 26px;
+	}
+
+	.slider {
+		max-width: 576px;
+	}
+
+	.slider__text span {
+		font-size: 20px;
+	}
+
+	.slider__text h1 {
+		font-size: 38px;
+	}
+
+	.slider__text p {
+		font-size: 12px;
+	}
+
+	.slider__socialIcons li {
+		max-width: 16px;
+	}
+
+	.slider__text p, h1 {
+		margin-bottom: 10px;
+	}
+
+	.slider__progressBar {
+		width: 160px;
+		font-size: 12px;
+		top: 44%;
+		right: 12%;
+	}
+
+	#bar {
+		margin-top: 6px;
+		height: 4px;
+		border-radius: 2px;
+	}
+
+	#bar span {
+		height: 4px;
+	}
+
+	.hide-item {
+		display: none;
+	}
+
+}
+
+/* ------------------- for screens 480px wide and less -------------------*/
+
+@media screen and (max-width: 480px) {
+
+	.slider {
+		max-width: 480px;
+	}
+
+	.slider__text span {
+		font-size: 16px;
+	}
+
+	.slider__text h1 {
+		font-size: 30px;
+	}
+
+	.slider__text p {
+		font-size: 10px;
+	}
+
+	.slider__socialIcons li {
+		max-width: 12px;
+	}
+
+	.slider__text p, h1 {
+		margin-bottom: 8px;
+	}
+
+	.slider__progressBar {
+		width: 140px;
+		font-size: 10px;
+		top: 36%;
+		right: 11%;
+	}
+
+	.hide-item {
+		display: none;
+	}
+
+}
