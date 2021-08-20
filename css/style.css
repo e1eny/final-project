@@ -393,7 +393,6 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .recommendations {
 	height: 570px;
-	/*background-color: navy;*/
 	background-image: url("../images/recommendations_banner.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -723,10 +722,122 @@ name=...&email=...&website=...&message=...
 		bottom: 22%;
 	}
 
+	.profile__text {
+		max-width: 264px;
+		margin: 25px 0;
+	}
+
+	.profile__text h2 {
+		font-size: 32px;
+	}
+
+	.profile__text p {
+		font-size: 12px;
+		margin: 25px 0;
+	}
+
+	.profile__btn {
+		margin: 40px 0;
+	}
+
+	.profile__btn a {
+		padding: 14px 46px;
+		font-size: 12px;
+		margin: 25px 0;
+	}
+
+	.profile__photo {
+		max-width: 300px;
+		margin: auto 40px;
+	}
+
+	.bar {
+		margin: 20px auto;
+	}
+
+	.profile__skills {
+		width: 264px;
+		font-size: 16px;
+	}
+
+	.profile__skills_list {
+		margin-bottom: 50px;
+	}
+
+	.profile__contactInfo_block {
+		margin: 70px 0;
+	}
+
+	.profile__contactInfo_block h4 {
+		font-size: 20px;
+	}
+
+	.profile__contactInfo_block div {
+		margin: 10px;
+	}
+
+	.services__blocks {
+		max-width: 818px;
+		margin: 72px 0;
+	}
+	.services__block_all {
+		margin: 4px;
+		height: 286px;
+		width: 196px;
+		padding: 14px;
+	}
+
+	.services__block_all img {
+		max-height: 48px;
+	}
+
+	.services__block_all h3 {
+		font-size: 16px;
+	}
+
 	.recommendations {
 		height: 368px;
 	}
 
+	.recommendations__img {
+		max-width: 100px;
+		padding: 5px;
+		margin: 30px;
+	}
+
+	.recommendations__info img {
+		max-height: 14px;
+	}
+
+	.recommendations__text {
+		font-size: 12px;
+		max-width: 300px;
+	}
+
+	.recommendations__info h5 {
+		font-size: 20px;
+	}
+
+	.recommendations__info span {
+		font-size: 11px;
+	}
+
+	.footer__info_text {
+		font-size: 12px;
+	}
+
+	.footer__rights {
+		font-size: 10px;
+		height: 60px;
+	}
+
+	.footer__info_logo {
+		max-width: 100px;
+	}
+
+	.footer__info {
+		height: 320px;
+	}
 }
 
 /* ------------------- for screens 768px wide and less -------------------*/
@@ -743,24 +854,24 @@ name=...&email=...&website=...&message=...
 	}
 
 	.slider__content {
-		top: 10%;
-		left: 60%;
+		top: 13%;
+		left: 50%;
 	}
 
 	.slider__text span {
-		font-size: 36px;
+		font-size: 20px;
 	}
 
 	.slider__text h1 {
-		font-size: 46px;
+		font-size: 30px;
 	}
 
 	.slider__text p {
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	.slider__socialIcons li {
-		max-width: 20px;
+		max-width: 14px;
 	}
 
 	#bar {
@@ -770,69 +881,134 @@ name=...&email=...&website=...&message=...
 	.slider__progressBar {
 		width: 200px;
 		top: 40%;
-		right: 13%;
+		right: 23%;
 	}
 
-	.hide-item {
-		display: none;
+	.profile {
+		padding-top: 40px;
 	}
 
-}
-
-/* ------------------- for screens 576px wide and less -------------------*/
-
-@media screen and (max-width: 576px) {
-
-	.header img {
-		max-width: 76px;
-		margin: 26px 26px;
+	.profile__text {
+		max-width: 200px;
+		margin: 20px 0;
 	}
 
-	.slider {
-		max-width: 576px;
+	.profile__text h2 {
+		font-size: 24px;
 	}
 
-	.slider__text span {
-		font-size: 20px;
+	.profile__text p {
+		font-size: 10px;
+		margin: 20px 0;
 	}
 
-	.slider__text h1 {
-		font-size: 38px;
+	.profile__btn {
+		margin: 30px 0;
 	}
 
-	.slider__text p {
-		font-size: 12px;
+	.profile__btn a {
+		padding: 10px 38px;
+		font-size: 10px;
+		margin: 22px 0;
 	}
 
-	.slider__socialIcons li {
-		max-width: 16px;
+	.profile__photo {
+		max-width: 200px;
+		margin: auto 25px;
 	}
 
-	.slider__text p, h1 {
-		margin-bottom: 10px;
+	.bar {
+		margin: 14px auto;
 	}
 
-	.slider__progressBar {
+	.profile__skills {
 		width: 160px;
-		font-size: 12px;
-		top: 44%;
-		right: 12%;
+		font-size: 14px;
 	}
 
-	#bar {
-		margin-top: 6px;
-		height: 4px;
-		border-radius: 2px;
+	.profile__contactInfo_block {
+		margin: 45px 0;
 	}
 
-	#bar span {
-		height: 4px;
+	.profile__contactInfo_block h4 {
+		font-size: 9px;
+		padding-bottom: 1em;
 	}
 
-	.hide-item {
-		display: none;
+	.profile__contactInfo_block a, p {
+		font-size: 8px;
 	}
 
+	.profile__contactInfo_block div {
+		margin: 4px;
+	}
+
+	.profile__contactInfo_block img {
+		width: 16px;
+		height: 16px;
+	}
+
+	.profile__contactInfo_imgBorder {
+		padding: 16px;
+		width: 16px;
+		height: 16px;
+	}
+
+	.services__blocks {
+		max-width: 500px;
+		margin: 50px 0;
+	}
+	.services__block_all {
+		margin: 4px;
+		height: 240px;
+		width: 242px;
+		padding: 12px;
+	}
+
+	.recommendations {
+		height: 300px;
+	}
+
+	.recommendations__img {
+		max-width: 75px;
+		padding: 3px;
+		margin: 25px;
+	}
+
+	.recommendations__info img {
+		max-height: 12px;
+	}
+
+	.recommendations__text {
+		font-size: 10px;
+		max-width: 200px;
+	}
+
+	.recommendations__info h5 {
+		font-size: 14px;
+	}
+
+	.recommendations__info span {
+		font-size: 9px;
+	}
+
+	.footer__info_text {
+		font-size: 11px;
+		max-width: 300px;
+	}
+
+	.footer__rights {
+		font-size: 8px;
+		height: 48px;
+	}
+
+	.footer__info_logo {
+		max-width: 75px;
+	}
+
+	.footer__info {
+		height: 240px;
+	}
 }
 
 /* ------------------- for screens 480px wide and less -------------------*/
@@ -843,12 +1019,9 @@ name=...&email=...&website=...&message=...
 		max-width: 480px;
 	}
 
-	.slider__text span {
-		font-size: 16px;
-	}
-
-	.slider__text h1 {
-		font-size: 30px;
+	.slider__content {
+		top: 10%;
+		left: 60%;
 	}
 
 	.slider__text p {
@@ -865,13 +1038,149 @@ name=...&email=...&website=...&message=...
 
 	.slider__progressBar {
 		width: 140px;
-		font-size: 10px;
 		top: 36%;
-		right: 11%;
+		right: 10%;
 	}
 
-	.hide-item {
+	#bar {
+		margin-top: 8px;
+	}
+
+	.profile__text {
+		max-width: 140px;
+		margin: 14px 0;
+	}
+
+	.profile__text h2 {
+		font-size: 16px;
+		margin: 4px 0;
+	}
+
+	.profile__text span {
+		font-size: 10px;
+	}
+
+	.profile__text p {
+		font-size: 10px;
+		margin: 4px 0;
+		line-height: 1.25em;
+	}
+
+	.profile__btn {
+		margin: 20px 0;
+	}
+
+	.profile__btn a {
+		padding: 5px 25px;
+		font-size: 10px;
+		margin: 16px 0;
+	}
+
+	.profile__photo {
+		max-width: 150px;
+		margin: auto 16px;
+	}
+
+	.bar {
+		height: 2px;
+		margin: 8px auto;
+	}
+
+	.bar span {
+		height: 2px;
+	}
+
+	.profile__skills {
+		width: 100px;
+		font-size: 10px;
+	}
+
+	.profile__skills_list {
+		margin-bottom: 25px;
+	}
+
+	.profile__socialIcons li {
+		width: 24px;
+		height: 24px;
+	}
+
+	.profile__contactInfo_block {
+		height: 140px;
+		margin: 30px 0;
+	}
+
+	.profile__contactInfo_imgBorder {
+		padding: 12px;
+	}
+
+	.services__blocks {
+		max-width: 380px;
+		margin: 40px 0;
+	}
+	.services__block_all {
+		margin: 4px;
+		height: 200px;
+		width: 182px;
+		padding: 10px;
+	}
+
+	.services__block_all img {
+		max-height: 40px;
+	}
+
+	.services__block_all h3 {
+		font-size: 16px;
+		margin: 16px;
+	}
+
+	.services__block_description {
+		font-size: 11px;
+	}
+
+	.recommendations {
+		height: 260px;
+	}
+
+	.recommendations__img {
 		display: none;
+	}
+
+	.recommendations__text {
+		font-size: 10px;
+		max-width: 200px;
+		margin-right: 20px;
+	}
+
+	.recommendations__info h5 {
+		font-size: 13px;
+		margin: 6px 0;
+	}
+
+	.recommendations__info span {
+		font-size: 8px;
+	}
+
+	.recommendations__info img {
+		max-height: 6px;
+		margin: 6px 0;
+	}
+
+	.recommendations__navigation {
+		width: 3px;
+		margin-left: 70px;
+	}
+
+	.recommendations__navigation_btn {
+		border: 1px solid white;
+		padding: 3px;
+	}
+
+	.footer__info_text {
+		margin: 10px;
+	}
+
+	.footer__info {
+		height: 220px;
 	}
 
 }
