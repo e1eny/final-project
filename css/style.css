@@ -37,14 +37,14 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .slider {
 	max-width: 1920px;
-	max-height: 1080px;
+	max-height: 960px;
 	overflow: hidden;
 }
 
 .slider__content {
 	position: absolute;
 	top: 35%;
-	left: 55%;
+	left: 60%;
 }
 
 .slider__text span {
@@ -378,6 +378,7 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .services__block_all:hover {
 	background-color: #131A36;
+	transition: 0.5s;
 }
 
 .services__block_all:hover .services__block_description {
@@ -419,7 +420,7 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .recommendations__text {
-	font-family: 'Roboto';
+	font-family: 'Roboto-Light';
 	font-size: 15px;
 	max-width: 500px;
 	text-align: right;
@@ -436,7 +437,7 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .recommendations__info span {
 	color: #E93656;
-	font-family: 'Roboto';
+	font-family: 'Roboto-Regular';
 	font-size: 13px;
 }
 
@@ -465,16 +466,18 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 	border-color: #E93656;
 }
 
-/*......*/
-
 /*5. ბოლო პროექტები:
-ამ სექციაში მოქცეულია შესრულებული პროექტები. შეავსეთ სატესტო ინფორმაციით. მაუსის მიტანის დროს უნდა გამოჩნდეს პროექტის სათაური როგორც ფოტოზეა ნაჩვენები. მარცხნივ მოცემულია კატეგორიები.
-JavaScript ზე დაწერეთ კოდი ისე, რომ კატეგორიაზე დაკლიკვით ხდებოდეს პროექტების გაფილტვრა. მაგალითად ჩავთვალოთ, რომ ყოველი კატეგორიიდან არის 1 პროექტი. თავიდან არჩეული იყოს ყველა, ხოლო კატეგორიაზე დაკლიკვისას დაიმალოს სხვა პროექტები და გამოჩნდეს მხოლოდ შესაბამისი კატეგორიის პროექტი.
+ამ სექციაში მოქცეულია შესრულებული პროექტები. შეავსეთ სატესტო ინფორმაციით. მაუსის მიტანის დროს უნდა გამოჩნდეს პროექტის სათაური როგორც 
+ფოტოზეა ნაჩვენები. მარცხნივ მოცემულია კატეგორიები. JavaScript ზე დაწერეთ კოდი ისე, რომ კატეგორიაზე დაკლიკვით ხდებოდეს პროექტების გაფილტვრა.
+მაგალითად ჩავთვალოთ, რომ ყოველი კატეგორიიდან არის 1 პროექტი. თავიდან არჩეული იყოს ყველა, ხოლო კატეგორიაზე დაკლიკვისას დაიმალოს სხვა
+პროექტები და გამოჩნდეს მხოლოდ შესაბამისი კატეგორიის პროექტი.
 */
 
 /*6. ბოლო სტატიები:
 აქ მოცემულია სტატიები. შეგიძლიათ შეავსოთ სატესტო ტექსტით. 
 */
+
+
 
 /*7. Rosa Team:
 აქ შეგიძლიათ განათავსოთ პარტნიორის ლოგოები. ფოტოზე მაუსის მიტანისას ლოგო უნდა იცვლებოდეს ტექსტით როგორც ფოტოზეა ნაჩვენები.
@@ -486,6 +489,7 @@ https://ucha.ge/contact-form/submit.php
 მოთხოვნა უნდა გაიგზავნოს POST მეთოდით შემდეგი პარამეტრებით:
 name=...&email=...&website=...&message=...
 */
+
 
 
 /*-- footer --*/
@@ -503,7 +507,7 @@ name=...&email=...&website=...&message=...
 
 .footer__info_text {
 	color: #A5A5A5;
-	font-family: Roboto;
+	font-family: 'Roboto-Regular';
 	font-size: 17px;
 	line-height: 1.5em;
 	text-align: center;
@@ -699,12 +703,17 @@ name=...&email=...&website=...&message=...
 		max-width: 1024px;
 	}
 
+	.slider__content {
+		top: 30%;
+		left: 60%;
+	}
+
 	.slider__text span {
-		font-size: 36px;
+		font-size: 32px;
 	}
 
 	.slider__text h1 {
-		font-size: 50px;
+		font-size: 44px;
 	}
 
 	.slider__text p {
@@ -719,7 +728,7 @@ name=...&email=...&website=...&message=...
 	.slider__progressBar {
 		width: 280px;
 		font-size: 16px;
-		bottom: 22%;
+		top: 70%;
 	}
 
 	.profile__text {
@@ -782,7 +791,7 @@ name=...&email=...&website=...&message=...
 	}
 	.services__block_all {
 		margin: 4px;
-		height: 286px;
+		height: 240px;
 		width: 196px;
 		padding: 14px;
 	}
@@ -854,8 +863,8 @@ name=...&email=...&website=...&message=...
 	}
 
 	.slider__content {
-		top: 13%;
-		left: 50%;
+		top: 16%;
+		left: 60%;
 	}
 
 	.slider__text span {
@@ -879,9 +888,9 @@ name=...&email=...&website=...&message=...
 	}
 
 	.slider__progressBar {
-		width: 200px;
+		width: 180px;
 		top: 40%;
-		right: 23%;
+		right: 8%;
 	}
 
 	.profile {
@@ -1037,13 +1046,18 @@ name=...&email=...&website=...&message=...
 	}
 
 	.slider__progressBar {
-		width: 140px;
+		width: 120px;
 		top: 36%;
 		right: 10%;
 	}
 
 	#bar {
+		height: 4px;
 		margin-top: 8px;
+	}
+
+	#bar span {
+		height: 4px;
 	}
 
 	.profile__text {
