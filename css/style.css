@@ -87,11 +87,11 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 #bar {
-	background: #F0F0F0;
-	margin-top: 20px;
-	display: block;
 	height: 6px;
 	border-radius: 3px;
+	margin-top: 20px;
+	background: #F0F0F0;
+	display: block;
 	overflow: hidden;
 }
 
@@ -127,15 +127,15 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .profile {
-	padding-top: 150px;
+	margin: 150px auto;
 }
 
 .profile__text {
 	max-width: 350px;
-	text-align: justify;
-	text-align-last: right;
 	margin: 50px 0;
 	line-height: 1.5em;
+	text-align: justify;
+	text-align-last: right;
 }
 
 .profile__text h2 {
@@ -162,11 +162,11 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .profile__btn a {
-	padding: 15px 50px;
-	background-color: #E93656;
-	color: white;
 	font-family: 'GlacialIndifference-Bold';
 	font-size: 15px;
+	color: white;
+	padding: 15px 50px;
+	background-color: #E93656;	
 }
 
 .profile__btn a:hover {
@@ -180,9 +180,9 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .profile__skills {
-	width: 300px;
 	font-family: 'GlacialIndifference-Bold';
 	font-size: 20px;
+	width: 300px;
 }
 
 .profile__skills_list {
@@ -190,17 +190,17 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .bar {
+	height: 8px;
+	margin: 25px auto;
 	background: #F0F0F0;
 	display: block;
-	height: 8px;
 	overflow: hidden;
-	margin: 25px auto;
 }
 
 .bar span {
 	height: 8px;
-	float: left;
 	background: #E93656;
+	float: left;
 }
 
 .design.is-visible {
@@ -260,12 +260,12 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .profile__socialIcons li {
-	background-color: #f0f0f0;
+	height: 50px;
+	width: 50px;
+	margin: 2px;
 	align-items: center;
 	justify-content: center;
-	margin: 2px;
-	width: 50px;
-	height: 50px;
+	background-color: #f0f0f0;
 }
 
 .profile__socialIcons li:hover {
@@ -286,28 +286,28 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .profile__contactInfo_block {
 	height: 210px;
-	background-color: #131A36; /*navy blue*/
-	color: white;
 	margin: 100px 0;
+	color: white;
+	background-color: #131A36; /*navy blue*/
 }
 
 .profile__contactInfo_block img {
-	width: 30px;
 	height: 30px;
+	width: 30px;
 }
 
 .profile__contactInfo_imgBorder {
+	height: 30px;
+	width: 30px;
+	padding: 30px;
 	box-sizing: content-box;
 	border: 2px dashed white;
 	border-radius: 50%;
-	padding: 30px;
-	width: 30px;
-	height: 30px;
 }
 
 .profile__contactInfo_imgBorder:hover {
-	border: 2px solid #E93656;
 	background-color: #E93656;
+	border: 2px solid #E93656;
 	transition: 0.5s;
 }
 
@@ -322,9 +322,9 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 }
 
 .profile__contactInfo_block a {
-	color: inherit;
 	font-family: 'Muli';
 	font-size: 14px;
+	color: inherit;
 }
 
 /*3. სერვისები
@@ -332,22 +332,18 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 შეგიძლიათ შეავსოთ სატესტო მონაცემებით. მაუსის მიტანის დროს უნდა გამოჩნდეს მოკლე აღწერა.
 */
 
-.services {
-	justify-content: center;
-}
-
 .services__blocks {
 	max-width: 1180px;
-	margin: 100px 0;
+	margin: 50px 0;
 }
 
 .services__block_all {
-	margin: 5px;
 	height: 360px;
 	width: 285px;
-	flex-direction: column;
-	background-color: #FAFAFA;
+	margin: 5px;
 	padding: 20px;
+	background-color: #FAFAFA;
+	flex-direction: column;
 }
 
 .services__block_all img {
@@ -363,8 +359,8 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 .services__block_description {
 	font-family: 'Muli';
 	font-size: 14px;
-	text-align: center;
 	color: white;
+	text-align: center;
 	visibility: hidden;
 }
 
@@ -394,6 +390,7 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .recommendations {
 	height: 570px;
+	margin: 50px auto;
 	background-image: url("../images/recommendations_banner.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -403,10 +400,10 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 
 .recommendations__img {
 	max-width: 140px;
-	border: 2px dashed white;
-	border-radius: 50%;
 	padding: 10px;
 	margin: 45px;
+	border: 2px dashed white;
+	border-radius: 50%;
 }
 
 .recommendations__info {
@@ -422,23 +419,23 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 .recommendations__text {
 	font-family: 'Roboto-Light';
 	font-size: 15px;
-	max-width: 500px;
-	text-align: right;
-	line-height: 1.5em;
 	color: white;
+	max-width: 500px;
+	line-height: 1.5em;
+	text-align: right;
 }
 
 .recommendations__info h5 {
 	font-family: 'GlacialIndifference-Bold';
 	font-size: 28px;
-	color: white;
 	margin: 15px 0;
+	color: white;
 }
 
 .recommendations__info span {
-	color: #E93656;
 	font-family: 'Roboto-Regular';
 	font-size: 13px;
+	color: #E93656;
 }
 
 .recommendations__slides input {
@@ -477,11 +474,82 @@ JavaScript ზე უნდა დაწეროთ სლაიდერი �
 აქ მოცემულია სტატიები. შეგიძლიათ შეავსოთ სატესტო ტექსტით. 
 */
 
-
-
 /*7. Rosa Team:
 აქ შეგიძლიათ განათავსოთ პარტნიორის ლოგოები. ფოტოზე მაუსის მიტანისას ლოგო უნდა იცვლებოდეს ტექსტით როგორც ფოტოზეა ნაჩვენები.
 */
+
+.rosateam {
+	margin: 55px auto;
+	flex-direction: column;
+}
+
+.rosateam__header {
+	margin: 30px auto;
+	flex-direction: column;
+}
+
+.rosateam__header h5 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 13px;
+	margin: 1em auto;
+	color: #2ED279;
+	text-transform: uppercase;
+}
+
+.rosateam__header h3 {
+	font-family: 'GlacialIndifference-Bold';
+	font-size: 70px;
+	text-transform: capitalize;
+}
+
+.rosateam__clients {
+	margin: 30px auto;
+	max-width: 1170px;
+	justify-content: space-around;
+}
+
+.rosateam__client {
+	height: 190px;
+	width: 230px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.rosateam__client_img {
+	position: relative;
+	max-width: 130px;
+}
+
+.rosateam__client h5 {
+	font-family: 'Roboto-Regular';
+	font-size: 16px;
+}
+
+.rosateam__client p {
+	font-family: 'Roboto-Light';
+	font-size: 13px;
+	margin: 1em;
+}
+
+.rosateam__description {
+	height: 190px;
+	width: 230px;
+	text-align: center;	
+	border: 4px solid #E93656;
+	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+	visibility: hidden;
+}
+
+.rosateam__client:hover .hidden-on-hover {
+	display: none;
+}
+
+.rosateam__client:hover .rosateam__description {
+	visibility: visible;
+}
 
 /*8. კონტაქტი
 ფონზე რომ რუკაა ეგ ჩასვით როგორც ფოტო, არ არის საჭირო ნამდვილი რუკის ჩასმა. ფორმა უნდა იგზავნებოდეს შემდეგ მისამართზე:
@@ -500,19 +568,20 @@ name=...&email=...&website=...&message=...
 }
 
 .footer__info {
-	flex-direction: column;
 	height: 428px;
 	width: 100%;
+	flex-direction: column;
 }
 
 .footer__info_text {
-	color: #A5A5A5;
+
 	font-family: 'Roboto-Regular';
 	font-size: 17px;
-	line-height: 1.5em;
-	text-align: center;
+	color: #A5A5A5;
 	max-width: 620px;
 	margin: 20px;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 .footer__socialIcons i {
@@ -535,13 +604,10 @@ name=...&email=...&website=...&message=...
 	font-family: 'Muli';
 	font-size: 15px;
 	color: white;
-	background-color: #171717;
 	height: 82px;
 	width: 100%;
+	background-color: #171717;
 }
-
-
-
 
 
 /* ------------------- for screens 1600px wide and less -------------------*/
@@ -847,6 +913,10 @@ name=...&email=...&website=...&message=...
 	.footer__info {
 		height: 320px;
 	}
+
+	.hide-item {
+		display: none;
+	}
 }
 
 /* ------------------- for screens 768px wide and less -------------------*/
@@ -1017,6 +1087,10 @@ name=...&email=...&website=...&message=...
 
 	.footer__info {
 		height: 240px;
+	}
+
+	.hide-item {
+		display: none;
 	}
 }
 
@@ -1197,4 +1271,7 @@ name=...&email=...&website=...&message=...
 		height: 220px;
 	}
 
+	.hide-item {
+		display: none;
+	}
 }
